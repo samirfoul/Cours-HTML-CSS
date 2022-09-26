@@ -11,12 +11,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name=" description" content="nous decouvrire ici les premiers balises ">
     <!-- cest notre titre mais c'est aussi le texte qui s'affiche de navigateur -->
+    <!-- on vas liee notre page au css-->
+    <link rel="stylesheet" href="main.css/index.css">
     <title> les balises HTML</title>
 </head>
 <!-- c'est le coprs du doucument;, la partie afficher dans le navigateur -->
 <body>
-    <!-- je peux ecrire ce que je veux -->
-    hello wf3 git
+
+    <h1> samir foul - developpeur </h1>
+    <p>samir foul - developpeur </p>
+    <img src="assets/image.jpg.jpg" 
+    alt="photo de google">
+    <!-- les balises orphelins, comme la balise <img> par exemple -->
+    <!-- att , par convention on peut fermer une balise orpheline soit pour une meileure lecture on l'ecrit en la fermant comme ceci <imag/> -->
+    <balise attribut="valeur"/>
+    <!--organisation du texte -->
+    <!-- on organise le texte avec les heading-->
+    <!-- dans notre cas, nous avons un h& donc un titre principal nous voulons un h2 -->
+
+    <h2> coordonnés </h2>
+    <!-- on se sert d'un paragpahe pour donner une indication -->
+    <p> je suis diponible, contactez moi</p>
+        <address>
+        <!-- j'utilise une balise anchor <a><a/> pour difinir nos liens -->
+        <!-- on vas donner un lien vers notre couriel-->
+        <!-- pour effectuer un saut en ligne on utilise <br>-->
+        <a href="mailto:foul_s@hotmail.fr">foul_s@hotmail.fr</a>
+        <br>
+        <a href="tel:+33613930831">+33(0)6-13-93-08-31</a>
+    </address>
+    <section>
+        <!-- debute section experience -->
+        <h2>Experience profissionels </h2>
+        <!-- on vas utiliser la liste non ordoneés-->
+
+        <ul>
+            <!-- on y insere des pucs -->
+            <li> 
+                <!-- on place un titre -->
+                <h3> formateur chez <span class="red">web force 3 </span> </h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda nemo tempora veritatis officia accusamus ipsa, explicabo tempore debitis eveniet libero <u>aliquid ullam omnis sed </u> fuga in iusto minima blanditiis id quia molestias odio sunt ratione? Iure et neque voluptatibus omnis doloremque autem, sunt quis doloribus ratione earum tenetur veniam facere voluptatum pariatur suscipit laborum accusamus animi vero aliquid maiores vel!
+                    moi je suis bala avce lautre et apres il ma fait ca ergergergerg  ergergergerg
+                    erg erg eg eg eg erg erg ergesculuilui 
+                </p>
+
+            </li>
+            <li> 
+                <h3> formateur chez <span class="red">web force 3 </span> </h3>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid id nihil consequuntur? Quis, assumenda. Iure dolores excepturi maxime eveniet, ratione dolore nostrum facere explicabo<mark> placeat libero natus suscipit accusamus </mark>  perferendis modi earum, ex non dolor. Odit nam optio iusto deleniti, tempora ea libero illum, sint perferendis sed vero pariatur, rerum modi harum blanditiis excepturi nulla impedit. Quis nesciunt error deserunt.
+                </p>
+            </li>
+            <li>  
+                <h3> formateur chez <span class="red">web force 3 </span> </h3>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo harum omnis accusantium. Ad placeat, quae laboriosam cumque delectus numquam eius dolore, quos laborum quisquam repellat veniam quasi iure molestiae. Doloremque tempora aspernatur iure dolor deserunt voluptatem pariatur maxime minima vitae fugiat id quibusdam voluptatibus ipsum beatae laboriosam adipisci eum saepe veritatis dolore, amet a alias cupiditate? Ullam vel aut eius.
+                </p>
+
+            
+            </li>
+            <li>
+                <h3> formateur chez <span class="red">web force 3 </span> </h3>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi iusto mollitia illum exercitationem eum accusantium iure fugit, sit tenetur fugiat veritatis deleniti sequi delectus neque recusandae itaque, vero nobis dolor debitis, officiis laudantium natus quisquam! Odit corrupti, aspernatur asperiores consequatur reiciendis sint temporibus optio accusamus! Quo praesentium dolorem eveniet odit, dolor sapiente ducimus odio minima et aspernatur maxime tempore. Nemo?</p>
+            
+            
+            </li>
+
+        </ul>
+        
+        <!-- fin du section experience -->
+    </section>
+    
 </body>
 
 </html>
