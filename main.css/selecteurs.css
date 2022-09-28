@@ -1,0 +1,33 @@
+p{
+    color: red;
+}
+/*pour une classe, on rajoute un . devant le nom */
+.blue{
+    color: blue;
+}
+/* pour un id on rajoute un #devant le nom*/
+#baseline {
+
+    border: 2px solid black;
+
+}
+
+/* on peut tres assigner les memes propriétes a plusieur élements grace a la virgule */
+h2, span{
+    background-color: orange;
+    font-weight: bold;
+}
+/* pour selectionne de facon tout */ 
+*{
+    font-size: 20px;
+}
+strong{
+    color: black;
+}
+/* on selectionne les strongs uniquement dans les strongs */
+p strong{
+    color: black;
+}
+p strong i {
+    color: violet;
+}

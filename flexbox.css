@@ -1,0 +1,97 @@
+section div {
+    /* largeur */
+    width: 200px;
+    /* hauteur */
+    height:200px;
+    /*bordure*/
+    border: 2px solid black;
+    /* marges extérieurs*/
+    margin: 20px;
+    /* on va rejouter des bordures */
+    border-radius:50%;
+    /* on vas rajouter une ombre*/
+    box-shadow: 10px 5px 50px rgba(0, 0, 0, 0.35);
+    
+}
+/* je selectione la 1er div*/
+div:first-of-type{
+    /*couleur de fond */
+    background: violet;
+}
+/* je selectione la 2eme div*/
+
+div:nth-child(2){
+    background: green;
+}
+/* je sélectione la dernier div */
+div:last-of-type{
+    background: red;
+}
+/* j'applique flex box sur la section paraent des mes div */
+/*section{
+    /* display: flex;
+    
+    /* alignement colone : column*/
+    /*flex-direction: column;
+    /* alignement colonne inversée */
+    /*flex-direction: column-reverse;
+    /* alignement rangée inversé */ 
+    /*flex-direction: row-reverse;
+    /* alignement en range : row */
+    /*flex-direction: row;
+}*/
+/* je creé des helpers */ 
+.flex{
+    display: flex;
+}
+/* deplacement sue l'axe principal (x) . on utilise la proprtie JUSTIFY-CONTENT  */
+.flex-start{
+    justify-content: flex-start;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.space-between{
+    justify-content: space-between;
+}
+.flex-around{
+    justify-content: space-around;
+}
+
+.center{
+    justify-content: center;
+}
+.space-around{
+    justify-content: space-around;
+}
+.text-center{
+    text-align: center;
+    font-size: 50px;
+}
+/*
+.column-reverse {
+    flex-direction: column-reverse;
+}*/
+/* deplacement sue l'axe principal (y) . on utilise la proprtie ALIGN-ITEMS   */
+.stretch{
+    align-items: stretch;
+}
+.align-flex-start{
+    align-items: flex-end;
+}
+.align-flex-en{
+    align-items: flex-end;
+}
+.align-center{
+    align-items: center;
+}
+.separation{
+    height: 50px;
+    background-color: black;
+}
+.container{
+    /* on passe une marge interieure */
+    padding:5px;
+    background: yellow;
+    height: 600px;
+}

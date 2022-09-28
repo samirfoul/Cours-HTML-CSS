@@ -4,54 +4,90 @@
 <!-- langue + ouverture de notre doucument -->
 <html lang="fr">
     <!-- la balise head est l'en tet de notre doucument -->
-<head>
-    <!-- les balise meta -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name=" description" content="nous decouvrire ici les premiers balises ">
-    <!-- cest notre titre mais c'est aussi le texte qui s'affiche de navigateur -->
-    <!-- on vas liee notre page au css-->
-    <link rel="stylesheet" href="main.css/index.css">
-    <title> les balises HTML</title>
-</head>
+    
+        <head>
+            <!-- les balise meta -->
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name=" description" content="nous decouvrire ici les premiers balises ">
+            <!-- cest notre titre mais c'est aussi le texte qui s'affiche de navigateur -->
+            <!-- on vas liee notre page au css-->
+            <link rel="stylesheet" href="main.css/index.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+            <title> les balises HTML</title>
+        </head>
+    
+
 <!-- c'est le coprs du doucument;, la partie afficher dans le navigateur -->
 <body>
+    <!-- les types de balises -->
+    <!-- le haut de notre page , header . contien géneralment la nav -->
 
-    <h1> samir foul - developpeur </h1>
-    <p>samir foul - developpeur </p>
-    <img src="assets/image.jpg.jpg" 
-    alt="photo de google">
+    <h1 class="dinguerie"> samir foul - developpeur </h1>
+    <div class="flex"> 
+        <img  src="assets/image.jpg.jpg" alt="photo de google" width="250px">
     <!-- les balises orphelins, comme la balise <img> par exemple -->
     <!-- att , par convention on peut fermer une balise orpheline soit pour une meileure lecture on l'ecrit en la fermant comme ceci <imag/> -->
+</div>
     <balise attribut="valeur"/>
-    <!--organisation du texte -->
-    <!-- on organise le texte avec les heading-->
-    <!-- dans notre cas, nous avons un h& donc un titre principal nous voulons un h2 -->
-
-    <h2> coordonnés </h2>
-    <!-- on se sert d'un paragpahe pour donner une indication -->
-    <p> je suis diponible, contactez moi</p>
-        <address>
-        <!-- j'utilise une balise anchor <a><a/> pour difinir nos liens -->
-        <!-- on vas donner un lien vers notre couriel-->
-        <!-- pour effectuer un saut en ligne on utilise <br>-->
-        <a href="mailto:foul_s@hotmail.fr">foul_s@hotmail.fr</a>
-        <br>
-        <a href="tel:+33613930831">+33(0)6-13-93-08-31</a>
-    </address>
-    <section>
+    <br>
+    <!-- lien vers une page de notre portfolio -->
+    <nav>
+    <div class="flex column">
+            <a href="portfolio.html">découvrez mes créations</a> 
+    
+        <!-- lien vers une page de notre page contact  -->
+            <br><br>
+            <a href="contact/contact.html">contactez moi </a>
+    
+            <!-- j'insere une icone facebook-->                  
+            <a href="https://fr-fr.facebook.com/" target="_blank" aria-label="devenez fan sur facebook">
+            <i class="fa-brands fa-facebook"></i> </a>
+            <span>facebook</span>
+    
+            <p>accés rapide</p>
+            <!-- on lie notre href avec l'id du bloc souhaité-->
+            <!-- on rajoute une infoubule avec l'attribut title -->
+            <a href="#Expro">experience proffisionelles</a>
+            <br>
+            <a href="#formation" title="accédez a mon cursus de formation ">formtions </a>
+        <!--organisation du texte -->
+        <!-- on organise le texte avec les heading-->
+        <!-- dans notre cas, nous avons un h& donc un titre principal nous voulons un h2 -->
+    
+        <h2> coordonnés </h2>
+        <!-- on se sert d'un paragpahe pour donner une indication -->
+        <p> je suis diponible, contactez moi</p>
+            <address>
+            <!-- j'utilise une balise anchor <a><a/> pour difinir nos liens -->
+            <!-- on vas donner un lien vers notre couriel-->
+            <!-- pour effectuer un saut en ligne on utilise <br>-->
+            <a href="mailto:foul_s@hotmail.fr">foul_s@hotmail.fr</a>
+            <br>
+            <a href="tel:+33613930831">+33(0)6-13-93-08-31</a>
+        </address>
+    
+    </div>
+    </nav>
+    
+    <section aria-labelledby="Experience profissionels">
         <!-- debute section experience -->
-        <h2>Experience profissionels </h2>
+        <h2 class="text-centre" id="Expro">Experience profissionels </h2>
         <!-- on vas utiliser la liste non ordoneés-->
 
         <ul>
             <!-- on y insere des pucs -->
             <li> 
                 <!-- on place un titre -->
-                <h3> formateur chez <span class="red">web force 3 </span> </h3>
+                <h3> formateur chez 
+                    <!--on cree un lien vers un  site externe -->
+                    <!-- l'attribut TARGET avec valeur _blank nous permet d'ouvrir un nouvel onglet -->
+                    <span class="red"> 
+                    <a href="http://www.wf3.fr" target="_blank">we force 3 </a>
+                </span> </h3> 
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda nemo tempora veritatis officia accusamus ipsa, explicabo tempore debitis eveniet libero <u>aliquid ullam omnis sed </u> fuga in iusto minima blanditiis id quia molestias odio sunt ratione? Iure et neque voluptatibus omnis doloremque autem, sunt quis doloribus ratione earum tenetur veniam facere voluptatum pariatur suscipit laborum accusamus animi vero aliquid maiores vel!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda nemo tempora veritatis officia accusamus ipsa, explicabo tempore debitis eveniet libero <u>aliquid ullam omnis sed </u> fuga in iusto minima blanditiis id quia molestias odio sunt ratione? Iure et neque voluptatibus omnis doloremque autem, <b>sunt quis doloribus </b> ratione earum tenetur veniam facere voluptatum pariatur suscipit laborum accusamus animi vero aliquid maiores vel!
                     moi je suis bala avce lautre et apres il ma fait ca ergergergerg  ergergergerg
                     erg erg eg eg eg erg erg ergesculuilui 
                 </p>
@@ -75,11 +111,22 @@
             
             
             </li>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <li>
+                <h3 class="text-centre" id="formation"> formation & diplomes obtenus </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nam sapiente iste voluptate, accusamus repellat distinctio, temporibus eos in nemo beatae voluptates aperiam quo quae similique eaque harum, velit tenetur voluptatum at voluptas ipsam? Architecto repellendus esse praesentium sit eaque adipisci, odio quidem culpa accusamus rerum ad ipsa aspernatur nisi eos accusantium ducimus illum dolores temporibus consectetur iusto! Exercitationem, unde!</p>
+            </li>
 
         </ul>
         
         <!-- fin du section experience -->
     </section>
+    <main>
+
+    </main>
+    <footer>
+        mon footer @copyright
+    </footer>
     
 </body>
 

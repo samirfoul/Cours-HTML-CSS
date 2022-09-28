@@ -1,3 +1,47 @@
+/* mes styles*/
 .red{
+
     color: red;
+}
+
+html{
+    /* on va rendre le scroll plus fluide*/
+scroll-behavior: smooth;
+
+}
+.text-centre{
+    text-align: center;
+}
+/* je decide que mes liens ne soit pas surlignés*/
+a{
+    text-decoration: none;
+     /*la couleur de tous les liens */
+    color:#6c316e;
+}
+/* je decide la couleur de mes liens visités */
+a:visited{
+    color: green;
+}
+/* je choisis la couleur / comportement du lien au survol de la souris */
+a:hover{
+    background: orange;
+    color: black;
+    text-decoration: underline;
+}
+.dinguerie{
+    color: blue;
+    color: red !important;
+    color: yellowgreen!important;
+    color: violet!important;
+
+}
+.flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+
+html{
+    background-color: aqua;
 }
