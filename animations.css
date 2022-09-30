@@ -1,0 +1,111 @@
+.btn{
+    background:rgb(251, 164, 2);
+    color: black;
+    font-size: 3vw;/* vw utiliser pour la taile du texte et ca achnge pas par rapport a la page . vh s'adepter a la page*/
+    cursor: pointer; 
+    padding: 1em;
+    width: 500px;
+    margin: 50px auto;
+    border-radius: 20px;
+    /* on applique une transformation (facultative quand elle a 1*/
+    transform: scale(1);
+    transition:1s; /* ou bien 1000ms*/
+}
+
+.btn:hover{
+    /* on augmente la valeur afin*/
+    transform: scale(1.25);
+}
+form{
+    width: 500px;
+    margin: auto;
+}
+.container{
+    background-color:cadetblue; 
+    padding: 20px 0;
+}
+form input{
+    border: 2px solid #fff;
+    border-radius: 100em;
+    color: darkblue;
+    font-size: 2.5em;
+    outline: none;
+    width: 100%;
+}
+
+/* on va utiliser la pseudo classe focus lorsque notre input est seléctione  */
+form input:focus{
+    border: green 5px solid;
+}
+
+/* on vas utiliser la pseudo class invalid afin de vérifier l'etat des donnees saisies */
+form input:not(:focus):invalid{
+    border: 2px solid red;
+    background: red;
+    color: white;
+}
+
+.btn2{
+    background:rgb(251, 164, 2);
+    color: black;
+    font-size: 3vw;/* vw utiliser pour la taile du texte et ca achnge pas par rapport a la page . vh s'adepter a la page*/
+    cursor: pointer; 
+    padding: 1em;
+    width: 500px;
+    margin: 50px auto;
+    border-radius: 20px;
+    /* on applique une transformation (facultative quand elle a 1*/
+    transform: scale(1);
+    transition:1s; /* ou bien 1000ms*/
+}
+.balle{
+    width: 200px;
+    height: 200px;
+    background-color: violet;
+    border-radius: 50%;
+    margin: auto;
+    transition: 400ms;
+}
+
+
+    .btn2:hover + .balle{
+    transform: scale(1.25);
+    transition: 400ms;
+    background: red;
+}
+
+.btn3{
+    background:rgb(251, 164, 2);
+    color: black;
+    font-size: 3vw;/* vw utiliser pour la taile du texte et ca achnge pas par rapport a la page . vh s'adepter a la page*/
+    cursor: pointer; 
+    padding: 1em;
+    width: 500px;
+    margin: 50px auto;
+    border-radius: 20px;
+    /* on applique une transformation (facultative quand elle a 1*/
+    transform: scale(1);
+    transition:1s; /* ou bien 1000ms*/
+}
+.progres{
+    width: 500px;
+    height: 30px;
+    border:1px solid black;
+    margin: auto;
+    padding: 2px;
+}
+.column-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.barre-progres{
+    background-color: chartreuse;
+    height: 30px;
+    transform: scalex(0);
+    transform-origin: 0 50% ;
+    transition: 3000ms cubic-bezier(.72,.13,.5,.77);
+}
+.btn3:active + .progres > .barre-progres{
+    transform: scalex(1);
+    transition: 2000ms;
+}

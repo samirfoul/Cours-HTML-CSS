@@ -7,16 +7,41 @@
 html{
     /* on va rendre le scroll plus fluide*/
 scroll-behavior: smooth;
+background-color: #c8bed4;
 
 }
 .text-centre{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: aqua;
+    border-radius: 5px;
+    width: 350px;
+    margin: auto;
 }
 /* je decide que mes liens ne soit pas surlignés*/
+.footer{
+    text-align: center;
+    font-size: 35px;
+    color: #4f00e2;
+    border: 5px solid black;
+    border-radius: 5px;
+    background-color: #edeaf1f2;
+    width: 400px;
+    margin: auto;
+
+}
 a{
     text-decoration: none;
      /*la couleur de tous les liens */
-    color:#6c316e;
+    color:#c50f0f;
+}
+.cordoné{
+    color: #242419a7;
+    text-decoration: underline;
+    font-family: cursive;
+    font-weight: bold;
+    
 }
 /* je decide la couleur de mes liens visités */
 a:visited{
@@ -32,16 +57,18 @@ a:hover{
     color: blue;
     color: red !important;
     color: yellowgreen!important;
-    color: violet!important;
+    color: rgb(23, 11, 23)!important;
 
 }
 .flex{
     display: flex;
+    
 }
 .column{
     flex-direction: column;
-}
+    
+    }
 
-html{
-    background-color: aqua;
+.pad15{
+    padding: 15px;
 }
