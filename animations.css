@@ -15,6 +15,9 @@
 .btn:hover{
     /* on augmente la valeur afin*/
     transform: scale(1.25);
+    background-color: black;
+    color: rgb(251, 197, 70);
+    border: 2px solid #fff;
 }
 form{
     width: 500px;
